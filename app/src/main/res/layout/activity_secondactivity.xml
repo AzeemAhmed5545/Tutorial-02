@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorprimary"
+    tools:context=".secondactivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_application"
+        android:textColor="@color/txtcolor"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_1"
+            android:textColor="@color/txtcolor"
+            android:textSize="20dp"
+            android:id="@+id/lbl2"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:layout_below="@id/lbl2"
+            android:textColor="@color/txtcolor"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Number2"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/txtcolor"
+            android:textSize="20dp"
+            android:id="@+id/lbl3"
+            android:layout_below="@id/txt1"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:onClick="number2"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt3"
+            android:layout_below="@id/lbl3"
+            android:textColor="@color/txtcolor"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="@color/txtcolor"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="@color/txtcolor"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="@color/txtcolor"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25"/>
+
+</LinearLayout>
